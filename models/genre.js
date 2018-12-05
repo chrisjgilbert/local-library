@@ -5,8 +5,6 @@ var Schema = mongoose.Schema;
 var GenreSchema = new Schema(
   {
     name: {type: String, required: true},
-    book: { type: Schema.Types.ObjectId, ref: 'Book', required: true, min:3, max: 100},
-    author: {type: Schema.Types.ObjectId, ref: 'Author', required: true}
   }
 );
 
